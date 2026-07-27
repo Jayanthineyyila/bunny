@@ -28,7 +28,7 @@
 
                 <span>Jayanthi .N</span>
             </div>
-            <nav class="flex gap-6 ">
+            <nav class="hidden md:flex gap-6">
                 <a href="#" class="hover:text-indigo-400">Home</a>
                 <a href="#Aboutme" class="hover:text-indigo-400">About Me</a>
                 <a href="#skills" class="hover:text-indigo-400">Skills</a>
@@ -36,10 +36,37 @@
                 <a href="#contact" class="hover:text-indigo-400">Contact</a>
             </nav>
             <a href="https://github.com/Jayanthineyyila" target="_blank"
-                class="text-white bg-indigo-400 px-7 py-3 rounded-lg">Github</a>
+                class="text-white bg-indigo-400 px-7 py-3 rounded-lg hidden md:flex">Github</a>
+            <button id="btn" class="md:hidden">
+                <svg id="open" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+
+                <!-- Close -->
+                <svg id="close" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg></button>
+        </div>
+        <div id="mobilemenu" class="hidden md:hidden mt-5">
+            
+            <nav class="flex flex-col text-center gap-4">
+                <a href="#" class="hover:text-indigo-400">Home</a>
+                <a href="#Aboutme" class="hover:text-indigo-400">About Me</a>
+                <a href="#skills" class="hover:text-indigo-400">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400">Projects</a>
+                <a href="#contact" class="hover:text-indigo-400">Contact</a>
+                <a href="https://github.com/Jayanthineyyila" target="_blank"
+                class="text-white bg-indigo-400 px-7 py-3 rounded-lg mb-3">Github</a>
+
+
+            </nav>
         </div>
     </header>
-    <div class="grid  grid-cols-2 items-center gap-10 px-6 py-20  max-w-7xl mt-5">
+    <div class="grid  md:grid-cols-2 items-center gap-10 px-6 py-20  max-w-7xl mt-5">
         <div class="ml-3">
             <p class="text-indigo-600 text-4xl font-semibold  ml-5">I'm</p>
             <p class="text-indigo-800 text-6xl font-bold mt-2">Jayanthi neyyila</p>
@@ -47,7 +74,7 @@
                 applications
                 using React, Node.js and other modern technologies.currently i'm studying btech 3rd year in the branch
                 of ece at rgukt sklm.</p>
-            <div class="m-8">
+            <div class="m-8 grid grid-cols-2">
                 <a href="https://www.linkedin.com/in/jayanthi-neyyala-780b2a2b8/" target="_blank"
                     class="border-2 border-indigo-800 px-7 py-3 rounded-xl">linked in</a>
                 <a href class="border-2 ml-5 border-white bg-indigo-500 text-white px-7 py-3 rounded-xl">Download</a>
@@ -76,7 +103,7 @@
         <div class="items-center h-full text-center">
             <h2 class="text-3xl font-bold mb-4 text-indigo-700 underline">Skills</h2>
         </div>
-        <div class="max-w-6xl grid grid-cols-4 flex items-center justify-center gap-8 mt-4 ">
+        <div class="max-w-6xl grid grid-cols-3 md:grid-cols-4 flex items-center justify-center gap-8 mt-4 ">
             <div class="border-2 border-indigo-600 text-center px-8 rounded-lg py-2">HTML </div>
             <div class="border-2 border-indigo-600 text-center px-8 rounded-lg py-2">CSS</div>
             <div class="border-2 border-indigo-600 text-center px-8 rounded-lg py-2">JS</div>
@@ -92,85 +119,115 @@
         <div>
             <h2 class="text-3xl font-bold text-indigo-700 underline text-center ">Projects</h2>
         </div>
-        <div class="grid grid-cols-3 gap-12 max-w-7xl mt-6">
+        <div class="grid md:grid-cols-3 gap-12 max-w-7xl mt-6">
             <div class=" border-2 border-indigo-500 p-5 rounded-lg">
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g6agm5qhlV5pMs6YXByTuZiYFNx1mVr9pwfGejggtq3Es2iXqmXTNZc&s=10"
                         class="w-[280px] h-[150px] rounded-xl" />
                 </div>
                 <div class="w-[280px] text-justify">
-                    <p class="mt-4 text-gray-600 ">A portfolio is a curated collection of work samples,financial assets,professional records that showcase an individual's or organization's skills ,performance,and achievements.</p>
+                    <p class="mt-4 text-gray-600 ">A portfolio is a curated collection of work samples,financial
+                        assets,professional records that showcase an individual's or organization's skills
+                        ,performance,and achievements.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-4">
                     <a href="" target="_blank" class="border-2 border-indigo-500 rounded-lg text-center py-2  ">View</a>
-                    <a href="" target="_blank" class="border-2 border-white bg-indigo-500 text-white text-center py-2 rounded-lg ">Github</a>
-                
+                    <a href="" target="_blank"
+                        class="border-2 border-white bg-indigo-500 text-white text-center py-2 rounded-lg ">Github</a>
+
 
                 </div>
             </div>
             <div class="border-2 border-indigo-500 p-5 rounded-lg">
                 <div class="">
-                    <img src="https://img.magnific.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?semt=ais_hybrid&w=740&q=80" class="rounded-lg w-[280px] h-[150px]"/>
+                    <img src="https://img.magnific.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="rounded-lg w-[280px] h-[150px]" />
                 </div>
                 <div class="w-[280px]">
-                    <p class="mt-4 text-gray-600 text-justify">A portfolio is a curated collection of work samples,financial assets,professional records that showcase an individual's or organization's skills ,performance,and achievements.</p>
+                    <p class="mt-4 text-gray-600 text-justify">A portfolio is a curated collection of work
+                        samples,financial assets,professional records that showcase an individual's or organization's
+                        skills ,performance,and achievements.</p>
                 </div>
                 <div class="grid grid-cols-2 mt-4 gap-6">
                     <a href="" target="_blank" class="border-2 border-indigo-500 py-2 text-center rounded-lg">View</a>
-                    <a href="" target="_blank" class="border-2 bg-indigo-500 py-2 text-center text-white border-white rounded-lg">Github</a>
+                    <a href="" target="_blank"
+                        class="border-2 bg-indigo-500 py-2 text-center text-white border-white rounded-lg">Github</a>
 
                 </div>
             </div>
             <div class="border-2 border-indigo-500 rounded-lg p-5">
                 <div>
-                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQHEOXjA5g24bw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1693422613600?e=2147483647&v=beta&t=a1CXnWd81mzqeeeATUEPA-TZ1laoFfN1Cd-UXyq5Y14" class="w-[280px] h-[150px] rounded-lg"/>
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQHEOXjA5g24bw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1693422613600?e=2147483647&v=beta&t=a1CXnWd81mzqeeeATUEPA-TZ1laoFfN1Cd-UXyq5Y14"
+                        class="w-[280px] h-[150px] rounded-lg" />
                 </div>
                 <div class="text-justify w-[280px]">
-                    <p class="mt-4 text-gray-600 ">A portfolio is a curated collection of work samples,financial assets,professional records that showcase an individual's or organization's skills ,performance,and achievements.</p>
+                    <p class="mt-4 text-gray-600 ">A portfolio is a curated collection of work samples,financial
+                        assets,professional records that showcase an individual's or organization's skills
+                        ,performance,and achievements.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-6  mt-4">
                     <a href="" target="_blank" class="border-2 border-indigo-500  py-2 text-center rounded-lg">View</a>
-                    <a href="" target="_blank" class=" border-2 bg-indigo-500 border-white text-white text-center py-2 rounded-lg">Github</a>
+                    <a href="" target="_blank"
+                        class=" border-2 bg-indigo-500 border-white text-white text-center py-2 rounded-lg">Github</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="flex justify-center items-center max-w-7xl flex-col px-6" id="contact">
         <div>
-            <h2 class="text-indigo-700 underline text-center text-3xl font-bold mt-4">contact</h2></div>
-            <div class="bg-indigo-50 border-2 border-indigo-500 p-4 max-w-7xl mt-4 rounded-lg">
-        <form action="" class="space-y-5 ">
-          <div>
-            <label for="name" class="text-indigo-600">Full name</label>
-            <input type="text" value="" placeholder="Enter your full name" class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800"/>
+            <h2 class="text-indigo-700 underline text-center text-3xl font-bold mt-4">contact</h2>
         </div>
-        <div>
-            <label for="email" class="text-indigo-600">E-mail</label>
-            <input type="email" value="" placeholder="Enter your email" class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800"/>
+        <div class="bg-indigo-50 border-2 border-indigo-500 p-4 max-w-7xl mt-4 rounded-lg">
+            <form action="" class="space-y-5 ">
+                <div>
+                    <label for="name" class="text-indigo-600">Full name</label>
+                    <input type="text" value="" placeholder="Enter your full name"
+                        class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800" />
+                </div>
+                <div>
+                    <label for="email" class="text-indigo-600">E-mail</label>
+                    <input type="email" value="" placeholder="Enter your email"
+                        class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800" />
 
+                </div>
+                <div>
+                    <label for="phone no" class="text-indigo-600">Phone No</label>
+                    <input type="tel" value="" placeholder="Enter your phone number"
+                        class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800" />
+                </div>
+                <div>
+                    <label for="reason" class="text-indigo-600">Reason</label>
+                    <textarea value="" rows="5" placeholder="Enter your reason"
+                        class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800"></textarea>
+
+                </div>
+                <div>
+                    <input type="submit"
+                        class="text-white border-2 border-indigo-800 bg-indigo-800 w-full p-2 rounded-lg" />
+                </div>
+
+            </form>
         </div>
-        <div>
-            <label for="phone no" class="text-indigo-600">Phone No</label>
-            <input type="tel" value="" placeholder="Enter your phone number" class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800"/>
-            </div>
-            <div>
-                <label for="reason" class="text-indigo-600">Reason</label>
-            <textarea value="" rows="5" placeholder="Enter your reason" class="border-2 border-indigo-500 px-4 py-3 w-full rounded-lg outline-none focus:border-indigo-800"></textarea>
-                
-            </div>
-            <div>
-                <input type="submit" class="text-white border-2 border-indigo-800 bg-indigo-800 w-full p-2 rounded-lg"/>
-            </div>
-
-    </form></div>
     </div>
     <footer class="bg-indigo-400 mt-6 border-t-2 border-indigo-800 py-8">
-        <div class="grid grid-cols-3 text-center text-white mx-auto items-center">
-<a href="mailto:jayanthineyyila17@gmail.com">jayanthineyyila17@gmail.com</a>
-<a href="tel:8919088267">8919088267</a>
-<p>&copy; 2026 Jayanthi.N all rights reserved</p>
+        <div class="grid md:grid-cols-3 text-center text-white mx-auto items-center">
+            <a href="mailto:jayanthineyyila17@gmail.com">jayanthineyyila17@gmail.com</a>
+            <a href="tel:8919088267">8919088267</a>
+            <p>&copy; 2026 Jayanthi.N all rights reserved</p>
         </div>
     </footer>
 </body>
+<script>
+    const mb = document.getElementById("btn");
+    const mm = document.getElementById("mobilemenu");
+    const o = document.getElementById("open");
+    const c = document.getElementById("close");
+
+    mb.addEventListener("click", () => {
+        mm.classList.toggle("hidden");
+        o.classList.toggle("hidden");
+        c.classList.toggle("hidden");
+    });
+</script>
 
 </html>
